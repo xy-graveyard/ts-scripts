@@ -25,7 +25,7 @@
     "utility",
     "typescript"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "sideEffects": false,
   "dependencies": {
     "@rollup/plugin-typescript": "^8.2.5",
@@ -44,6 +44,7 @@
     "compile": "bin/compile.js",
     "cycle": "bin/cycle.js",
     "dead": "bin/dead.js",
+    "deps": "bin/deps.js",
     "deploy": "bin/deploy.js",
     "fix": "bin/fix.js",
     "lint": "bin/lint.js",
@@ -65,9 +66,6 @@
     "up": "yarn ncu",
     "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall",
     "deps": "yarn depcheck"
-  },
-  "resolutions": {
-    "uuid": "^8"
   },
   "devDependencies": {
     "@types/node": "^16.7.1",
