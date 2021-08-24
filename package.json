@@ -33,24 +33,35 @@
     "depcheck": "^1.4.2",
     "eslint": "^7.32.0",
     "npm-check-updates": "^11.8.3",
-    "rollup": "^2.56.2",
-    "ts-prune": "^0.9.3",
+    "rollup": "^2.56.3",
+    "ts-prune": "^0.10.0",
     "tslib": "^2.3.1",
     "typescript": "^4.3.5"
   },
   "bin": {
     "build": "bin/build.js",
+    "xylabs-build": "bin/build.js",
     "clean": "bin/clean.js",
+    "xylabs-clean": "bin/clean.js",
     "compile": "bin/compile.js",
+    "xylabs-compile": "bin/compile.js",
     "cycle": "bin/cycle.js",
+    "xylabs-cycle": "bin/cycle.js",
     "dead": "bin/dead.js",
+    "xylabs-dead": "bin/dead.js",
     "deps": "bin/deps.js",
+    "xylabs-deps": "bin/deps.js",
     "deploy": "bin/deploy.js",
     "fix": "bin/fix.js",
+    "xylabs-fix": "bin/fix.js",
     "lint": "bin/lint.js",
+    "xylabs-lint": "bin/lint.js",
     "reinstall": "bin/reinstall.js",
+    "xylabs-reinstall": "bin/reinstall.js",
     "up": "bin/up.js",
-    "updo": "bin/updo.js"
+    "xylabs-up": "bin/up.js",
+    "updo": "bin/updo.js",
+    "xylabs-updo": "bin/updo.js"
   },
   "scripts": {
     "build": "rm -r -f bin && yarn deps && yarn lint && yarn lint-pkg && yarn compile && yarn compile",
@@ -69,7 +80,6 @@
   },
   "devDependencies": {
     "@types/node": "^16.7.1",
-    "eslint-plugin-tsdoc": "^0.2.14",
     "npm-package-json-lint": "^5.2.3",
     "npm-package-json-lint-config-default": "^3.0.0"
   }
