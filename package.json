@@ -36,7 +36,7 @@
     "rollup": "^2.56.3",
     "ts-prune": "^0.10.0",
     "tslib": "^2.3.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.2"
   },
   "bin": {
     "build": "bin/build.js",
@@ -64,7 +64,7 @@
     "xylabs-updo": "bin/updo.js"
   },
   "scripts": {
-    "build": "rm -r -f bin && yarn deps && yarn lint && yarn lint-pkg && yarn compile && yarn compile",
+    "build": "rm -r -f bin && yarn deps && yarn lint && yarn lint-pkg && yarn compile",
     "compile": "tsc -p ./tsconfig.json",
     "deploy": "yarn build && yarn version --patch && yarn publish",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
@@ -79,7 +79,7 @@
     "deps": "yarn depcheck"
   },
   "devDependencies": {
-    "@types/node": "^16.7.1",
+    "@types/node": "^16.7.2",
     "npm-package-json-lint": "^5.2.3",
     "npm-package-json-lint-config-default": "^3.0.0"
   }
