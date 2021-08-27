@@ -29,7 +29,7 @@
   "sideEffects": false,
   "dependencies": {
     "@rollup/plugin-typescript": "^8.2.5",
-    "@xylabs/eslint-config": "^2.0.16",
+    "@xylabs/eslint-config": "^2.0.19",
     "depcheck": "^1.4.2",
     "eslint": "^7.32.0",
     "npm-check-updates": "^11.8.3",
@@ -80,6 +80,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.7.2",
+    "@xylabs/eslint-config": "^2.0.19",
     "npm-package-json-lint": "^5.2.3",
     "npm-package-json-lint-config-default": "^3.0.0"
   }
