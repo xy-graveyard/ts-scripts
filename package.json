@@ -29,14 +29,13 @@
   "sideEffects": false,
   "dependencies": {
     "@rollup/plugin-typescript": "^8.2.5",
-    "@xylabs/eslint-config": "^2.0.19",
+    "@xylabs/eslint-config": "^2.0.21",
     "depcheck": "^1.4.2",
     "eslint": "^7.32.0",
-    "npm-check-updates": "^11.8.3",
-    "rollup": "^2.56.3",
-    "ts-prune": "^0.10.0",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.2"
+    "npm-check-updates": "^11.8.5",
+    "rollup": "^2.57.0",
+    "ts-prune": "^0.10.1",
+    "tslib": "^2.3.1"
   },
   "bin": {
     "build": "bin/build.js",
@@ -78,10 +77,13 @@
     "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall",
     "deps": "yarn depcheck"
   },
+  "resolutions": {
+    "typescript": "4.3.5"
+  },
   "devDependencies": {
-    "@types/node": "^16.7.2",
-    "@xylabs/eslint-config": "^2.0.19",
-    "npm-package-json-lint": "^5.2.3",
-    "npm-package-json-lint-config-default": "^3.0.0"
+    "@types/node": "^16.10.2",
+    "npm-package-json-lint": "^5.2.4",
+    "npm-package-json-lint-config-default": "^3.0.0",
+    "typescript": "4.3.5"
   }
 }
