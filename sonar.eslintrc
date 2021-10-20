@@ -4,12 +4,5 @@
   "extends": [
     "plugin:sonarjs/recommended"
   ],
-  "plugins": ["sonarjs"],
-  "rules": {
-    "import/no-internal-modules": ["warn", {"allow": [
-      "**/*.jpg",
-      "**/*.png",
-      "**/*.svg"
-    ]}]
-  }
+  "plugins": ["sonarjs"]
 }
