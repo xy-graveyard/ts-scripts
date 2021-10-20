@@ -1,6 +1,7 @@
 ignores: [
   "@rollup/plugin-typescript",
   "npm-package-json-lint-config-default",
+  "eslint-plugin-sonarjs",
   "rollup",
   "tslib"
 ]
