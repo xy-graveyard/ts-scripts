@@ -25,7 +25,7 @@
     "utility",
     "typescript"
   ],
-  "version": "1.0.17",
+  "version": "1.0.18",
   "sideEffects": false,
   "dependencies": {
     "@xylabs/eslint-config": "^2.0.33",
