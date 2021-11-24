@@ -75,7 +75,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
     "lint-pkg": "npmPkgJsonLint .",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
-    "cycle": "NODE_ENV=--max-old-space-size=8092 eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
+    "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
     "clean": "rm -f *.tsbuildinfo && rm -r -f ./bin",
     "reinstall": "rm -r -f ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log && yarn install",
     "dead": "yarn ts-prune",
@@ -84,7 +84,7 @@
     "deps": "yarn depcheck"
   },
   "devDependencies": {
-    "@types/node": "^16.11.7",
+    "@types/node": "^16",
     "eslint": "^8",
     "prettier": "^2",
     "typescript": "^4"

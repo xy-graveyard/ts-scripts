@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "ignorePatterns": ["node_modules/", "build/", "dist/"],
+  "extends": [
+    "@xylabs/eslint-config"
+  ],
+  "rules": {
+    "import/no-cycle": [1, { "maxDepth": 10 }]
+  }
+}
