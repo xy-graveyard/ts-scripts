@@ -8,25 +8,25 @@
 
 ## Required Tools (Global)
 
-- [Visual Studio Code](https://code.visualstudio.com)
-- [NPM](https://www.npmjs.com)
-- [Git](https://git-scm.com/)
-- [Yarn](https://yarnpkg.com/)
+-   [Visual Studio Code](https://code.visualstudio.com)
+-   [NPM](https://www.npmjs.com)
+-   [Git](https://git-scm.com/)
+-   [Yarn](https://yarnpkg.com/)
 
 ## Tools
 
-- [ESLint](https://eslint.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Depcheck](https://www.npmjs.com/package/depcheck)
-- [TS-Prune](https://www.npmjs.com/package/ts-prune)
-- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+-   [ESLint](https://eslint.org)
+-   [TypeScript](https://www.typescriptlang.org)
+-   [Depcheck](https://www.npmjs.com/package/depcheck)
+-   [TS-Prune](https://www.npmjs.com/package/ts-prune)
+-   [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 
 ## Global Configuration
 
-- Install Visual Studio Code (vsCode)
-- Install NPM (Node.js)
-- Install Yarn
-- Install Git
+-   Install Visual Studio Code (vsCode)
+-   Install NPM (Node.js)
+-   Install Yarn
+-   Install Git
 
 ## Project Scripts
 
@@ -68,7 +68,7 @@
 
 ## Maintainers
 
-- [Arie Trouw](https://arietrouw.com) ([Github](https://github.com/arietrouw))
+-   [Arie Trouw](https://arietrouw.com) ([Github](https://github.com/arietrouw))
 
 ## License
 
