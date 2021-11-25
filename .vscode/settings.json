@@ -34,5 +34,5 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
+  }
 }

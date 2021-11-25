@@ -1,92 +1,92 @@
 {
-  "name": "@xylabs/ts-scripts",
-  "homepage": "https://xylabs.com",
-  "bugs": {
-    "url": "https://github.com/xylabs/ts-scripts/issues",
-    "email": "support@xylabs.com"
-  },
-  "description": "TypeScript project scripts",
   "author": {
+    "email": "support@xylabs.com",
     "name": "XY Labs Development Team",
-    "url": "https://xylabs.com",
-    "email": "support@xylabs.com"
+    "url": "https://xylabs.com"
   },
-  "license": "LGPL-3.0",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xylabs/ts-scripts.git"
+  "bin": {
+    "build": "bin/build.js",
+    "clean": "bin/clean.js",
+    "compile": "bin/compile.js",
+    "cycle": "bin/cycle.js",
+    "dead": "bin/dead.js",
+    "deploy": "bin/deploy.js",
+    "deps": "bin/deps.js",
+    "fix": "bin/fix.js",
+    "lint": "bin/lint.js",
+    "rebuild": "bin/rebuild.js",
+    "reinstall": "bin/reinstall.js",
+    "sonar": "bin/sonar.js",
+    "up": "bin/up.js",
+    "updo": "bin/updo.js",
+    "xylabs-build": "bin/build.js",
+    "xylabs-clean": "bin/clean.js",
+    "xylabs-compile": "bin/compile.js",
+    "xylabs-cycle": "bin/cycle.js",
+    "xylabs-dead": "bin/dead.js",
+    "xylabs-deps": "bin/deps.js",
+    "xylabs-fix": "bin/fix.js",
+    "xylabs-lint": "bin/lint.js",
+    "xylabs-rebuild": "bin/rebuild.js",
+    "xylabs-reinstall": "bin/reinstall.js",
+    "xylabs-sonar": "bin/sonar.js",
+    "xylabs-up": "bin/up.js",
+    "xylabs-updo": "bin/updo.js"
   },
-  "publishConfig": {
-    "access": "public"
+  "bugs": {
+    "email": "support@xylabs.com",
+    "url": "https://github.com/xylabs/ts-scripts/issues"
   },
-  "keywords": [
-    "xylabs",
-    "utility",
-    "typescript"
-  ],
-  "version": "1.0.21",
-  "sideEffects": false,
   "dependencies": {
-    "@xylabs/eslint-config": "^2.1.3",
+    "@xylabs/eslint-config": "^2.1.4",
     "depcheck": "^1.4.2",
     "eslint-plugin-sonarjs": "^0.10.0",
     "npm-check-updates": "^12",
     "npm-package-json-lint": "^5.4.2",
     "npm-package-json-lint-config-default": "^3.0.0",
-    "ts-prune": "^0.10.1"
+    "ts-prune": "^0.10"
   },
-  "peerDependencies": {
-    "typescript": "^4"
-  },
-  "bin": {
-    "build": "bin/build.js",
-    "xylabs-build": "bin/build.js",
-    "rebuild": "bin/rebuild.js",
-    "xylabs-rebuild": "bin/rebuild.js",
-    "clean": "bin/clean.js",
-    "xylabs-clean": "bin/clean.js",
-    "compile": "bin/compile.js",
-    "xylabs-compile": "bin/compile.js",
-    "cycle": "bin/cycle.js",
-    "xylabs-cycle": "bin/cycle.js",
-    "dead": "bin/dead.js",
-    "xylabs-dead": "bin/dead.js",
-    "deps": "bin/deps.js",
-    "xylabs-deps": "bin/deps.js",
-    "deploy": "bin/deploy.js",
-    "fix": "bin/fix.js",
-    "xylabs-fix": "bin/fix.js",
-    "lint": "bin/lint.js",
-    "xylabs-lint": "bin/lint.js",
-    "sonar": "bin/sonar.js",
-    "xylabs-sonar": "bin/sonar.js",
-    "reinstall": "bin/reinstall.js",
-    "xylabs-reinstall": "bin/reinstall.js",
-    "up": "bin/up.js",
-    "xylabs-up": "bin/up.js",
-    "updo": "bin/updo.js",
-    "xylabs-updo": "bin/updo.js"
-  },
-  "scripts": {
-    "build": "rm -r -f bin && yarn deps && yarn lint && yarn lint-pkg && yarn compile",
-    "compile": "tsc -p ./tsconfig.json",
-    "deploy": "yarn build && yarn version --patch && yarn publish",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
-    "lint-pkg": "npmPkgJsonLint .",
-    "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
-    "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
-    "clean": "rm -f *.tsbuildinfo && rm -r -f ./bin",
-    "reinstall": "rm -r -f ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log && yarn install",
-    "dead": "yarn ts-prune",
-    "up": "yarn ncu",
-    "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall",
-    "deps": "yarn depcheck"
-  },
+  "description": "TypeScript project scripts",
   "devDependencies": {
     "@types/node": "^16",
     "eslint": "^8",
     "prettier": "^2",
     "typescript": "^4"
-  }
+  },
+  "homepage": "https://xylabs.com",
+  "keywords": [
+    "xylabs",
+    "utility",
+    "typescript"
+  ],
+  "license": "LGPL-3.0",
+  "name": "@xylabs/ts-scripts",
+  "peerDependencies": {
+    "typescript": "^4"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xylabs/ts-scripts.git"
+  },
+  "scripts": {
+    "build": "rm -r -f bin && yarn deps && yarn lint && yarn lint-pkg && yarn compile",
+    "clean": "rm -f *.tsbuildinfo && rm -r -f ./bin",
+    "compile": "tsc -p ./tsconfig.json",
+    "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
+    "dead": "yarn ts-prune",
+    "deploy": "yarn build && yarn version --patch && yarn publish",
+    "deps": "yarn depcheck",
+    "fix": "eslint . --fix",
+    "lint": "eslint .",
+    "lint-pkg": "npmPkgJsonLint .",
+    "reinstall": "rm -r -f ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log && yarn install",
+    "up": "yarn ncu",
+    "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall"
+  },
+  "sideEffects": false,
+  "version": "1.0.21"
 }
