@@ -1,4 +1,5 @@
 ignores: [
+  "@types/node",
   "npm-package-json-lint-config-default",
   "eslint-plugin-sonarjs",
   "tslib"
