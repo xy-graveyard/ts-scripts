@@ -75,7 +75,7 @@
   },
   "scripts": {
     "build": "rimraf bin && yarn lint && yarn lint-pkg && yarn compile",
-    "clean": "rimraf *.tsbuildinfo && rimraf ./bin",
+    "clean": "rimraf *.tsbuildinfo ./bin",
     "compile": "tsc -p ./tsconfig.build.json",
     "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
     "dead": "yarn ts-prune",
@@ -84,7 +84,7 @@
     "fix": "eslint . --fix",
     "lint": "eslint .",
     "lint-pkg": "npmPkgJsonLint .",
-    "reinstall": "rimraf ./node_modules && rimraf ./yarn-error.log && yarn install",
+    "reinstall": "rimraf yarn-error.log ./node_modules && yarn install",
     "up": "yarn ncu",
     "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall"
   },
