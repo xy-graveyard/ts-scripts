@@ -1,6 +1,6 @@
 import { ExecException } from 'child_process'
 
-/** Catched child process a crash and returns the code */
+/** Catches child process a crash and returns the code */
 
 const safeExit = (func: () => void) => {
   try {
