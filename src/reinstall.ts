@@ -5,5 +5,5 @@ import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Reinstall [${process.cwd()}]`)
   execFileSync('yarn', ['rimraf', './node_modules'], { shell: true, stdio: 'inherit' })
-  execFileSync('yarn', ['install'], { shell: true, stdio: 'inherit' })
+  execFileSync('yarn', ['upgrade'], { shell: true, stdio: 'inherit' })
 })
