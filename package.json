@@ -74,10 +74,10 @@
     "url": "https://github.com/xylabs/ts-scripts.git"
   },
   "scripts": {
-    "_cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
     "build": "rimraf bin && yarn lint && yarn lint-pkg && yarn compile",
     "clean": "rimraf *.tsbuildinfo && rimraf ./bin",
     "compile": "tsc -p ./tsconfig.build.json",
+    "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
     "dead": "yarn ts-prune",
     "deploy": "yarn build && yarn version --patch && yarn publish",
     "deps": "yarn depcheck",
