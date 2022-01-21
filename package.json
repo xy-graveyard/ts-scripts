@@ -51,6 +51,7 @@
     "@types/node": "^17",
     "eslint": "^8",
     "prettier": "^2",
+    "rimraf": "^3.0.2",
     "typescript": "^4"
   },
   "homepage": "https://xylabs.com",
@@ -73,17 +74,17 @@
     "url": "https://github.com/xylabs/ts-scripts.git"
   },
   "scripts": {
-    "build": "rm -r -f bin && yarn lint && yarn lint-pkg && yarn compile",
-    "clean": "rm -f *.tsbuildinfo && rm -r -f ./bin",
+    "_cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
+    "build": "rimraf bin && yarn lint && yarn lint-pkg && yarn compile",
+    "clean": "rimraf *.tsbuildinfo && rimraf ./bin",
     "compile": "tsc -p ./tsconfig.build.json",
-    "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
     "dead": "yarn ts-prune",
     "deploy": "yarn build && yarn version --patch && yarn publish",
     "deps": "yarn depcheck",
     "fix": "eslint . --fix",
     "lint": "eslint .",
     "lint-pkg": "npmPkgJsonLint .",
-    "reinstall": "rm -r -f ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log && yarn install",
+    "reinstall": "rimraf ./node_modules && rimraf ./yarn-error.log && yarn install",
     "up": "yarn ncu",
     "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall"
   },
