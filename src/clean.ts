@@ -4,7 +4,7 @@ import { execFileSync } from 'child_process'
 import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Clean [${process.cwd()}]`)
-  execFileSync('rm', ['-f', '*.tsbuildinfo'], { stdio: 'inherit' })
-  execFileSync('rm', ['-r', '-f', './dist'], { stdio: 'inherit' })
-  execFileSync('rm', ['-r', '-f', './build'], { stdio: 'inherit' })
+  execFileSync('rm', ['-f', '*.tsbuildinfo'], { shell: true, stdio: 'inherit' })
+  execFileSync('rm', ['-r', '-f', './dist'], { shell: true, stdio: 'inherit' })
+  execFileSync('rm', ['-r', '-f', './build'], { shell: true, stdio: 'inherit' })
 })
