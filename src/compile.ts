@@ -4,5 +4,5 @@ import { execFileSync } from 'child_process'
 import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Compile [${process.cwd()}]`)
-  execFileSync('yarn', ['tsc', '-p', 'tsconfig.build.json'], { stdio: 'inherit' })
+  execFileSync('yarn', ['tsc', '-p', 'tsconfig.build.json'], { shell: true, stdio: 'inherit' })
 })

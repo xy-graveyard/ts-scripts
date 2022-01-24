@@ -5,6 +5,7 @@ import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Cycle [${process.cwd()}]`)
   execFileSync('yarn', ['eslint', '-c', 'node_modules/@xylabs/ts-scripts/cycle.eslintrc', '.'], {
+    shell: true,
     stdio: 'inherit',
   })
 })

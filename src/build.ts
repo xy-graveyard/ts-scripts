@@ -5,6 +5,6 @@ import { safeExit } from './safeExit'
 
 safeExit(() => {
   console.log(`Build [${process.cwd()}]`)
-  execFileSync('yarn', ['lint'], { stdio: 'inherit' })
-  execFileSync('yarn', ['compile'], { stdio: 'inherit' })
+  execFileSync('yarn', ['lint'], { shell: true, stdio: 'inherit' })
+  execFileSync('yarn', ['compile'], { shell: true, stdio: 'inherit' })
 })

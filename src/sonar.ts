@@ -5,6 +5,7 @@ import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Sonar [${process.cwd()}]`)
   execFileSync('yarn', ['eslint', '-c', 'node_modules/@xylabs/ts-scripts/sonar.eslintrc', '.'], {
+    shell: true,
     stdio: 'inherit',
   })
 })

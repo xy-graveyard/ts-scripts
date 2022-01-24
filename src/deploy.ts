@@ -4,7 +4,7 @@ import { execFileSync } from 'child_process'
 import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Deploy [${process.cwd()}]`)
-  execFileSync('yarn', ['build'], { stdio: 'inherit' })
-  execFileSync('yarn', ['version', '--patch'], { stdio: 'inherit' })
-  execFileSync('yarn', ['publish'], { stdio: 'inherit' })
+  execFileSync('yarn', ['build'], { shell: true, stdio: 'inherit' })
+  execFileSync('yarn', ['version', '--patch'], { shell: true, stdio: 'inherit' })
+  execFileSync('yarn', ['publish'], { shell: true, stdio: 'inherit' })
 })
