@@ -90,5 +90,5 @@
     "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall"
   },
   "sideEffects": false,
-  "version": "1.0.26"
+  "version": "1.0.27"
 }
