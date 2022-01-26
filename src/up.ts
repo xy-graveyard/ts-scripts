@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-import { execFileSync } from 'child_process'
+import { execSync } from 'child_process'
 
 import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Up [${process.cwd()}]`)
-  execFileSync('yarn', ['ncu'], { stdio: 'inherit' })
+  execSync('yarn ncu', { stdio: 'inherit' })
 })
