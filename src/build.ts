@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { execFileSync } from 'child_process'
+import { execSync } from 'child_process'
 
 import { safeExit } from './safeExit'
 
 safeExit(() => {
   console.log(`Build [${process.cwd()}]`)
-  execFileSync('yarn', ['lint'], { stdio: 'inherit' })
-  execFileSync('yarn', ['compile'], { stdio: 'inherit' })
+  execSync('yarn lint', { stdio: 'inherit' })
+  execSync('yarn compile', { stdio: 'inherit' })
 })

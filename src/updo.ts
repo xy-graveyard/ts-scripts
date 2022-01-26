@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import { execFileSync } from 'child_process'
+import { execSync } from 'child_process'
 
 import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Updo [${process.cwd()}]`)
-  execFileSync('yarn', ['install'], { stdio: 'inherit' })
-  execFileSync('yarn', ['upgrade'], { stdio: 'inherit' })
-  execFileSync('yarn', ['ncu', '-u'], { stdio: 'inherit' })
-  execFileSync('yarn', ['reinstall'], { stdio: 'inherit' })
+  execSync('yarn install', { stdio: 'inherit' })
+  execSync('yarn upgrade', { stdio: 'inherit' })
+  execSync('yarn ncu -u', { stdio: 'inherit' })
+  execSync('yarn reinstall', { stdio: 'inherit' })
 })

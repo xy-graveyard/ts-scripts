@@ -38,12 +38,14 @@
     "url": "https://github.com/xylabs/ts-scripts/issues"
   },
   "dependencies": {
-    "@xylabs/eslint-config": "^2.1.6",
-    "depcheck": "^1.4.2",
-    "eslint-plugin-sonarjs": "^0.10.0",
+    "@xylabs/eslint-config": "^2.2.11",
+    "depcheck": "^1.4.3",
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "node-cmd": "^5.0.0",
     "npm-check-updates": "^12",
     "npm-package-json-lint": "^5.4.2",
     "npm-package-json-lint-config-default": "^3.0.0",
+    "rimraf": "^3.0.2",
     "ts-prune": "^0.10"
   },
   "description": "TypeScript project scripts",
@@ -73,8 +75,8 @@
     "url": "https://github.com/xylabs/ts-scripts.git"
   },
   "scripts": {
-    "build": "rm -r -f bin && yarn lint && yarn lint-pkg && yarn compile",
-    "clean": "rm -f *.tsbuildinfo && rm -r -f ./bin",
+    "build": "rimraf bin && yarn lint && yarn lint-pkg && yarn compile",
+    "clean": "rimraf *.tsbuildinfo && rm -r -f ./bin",
     "compile": "tsc -p ./tsconfig.build.json",
     "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
     "dead": "yarn ts-prune",
@@ -83,10 +85,13 @@
     "fix": "eslint . --fix",
     "lint": "eslint .",
     "lint-pkg": "npmPkgJsonLint .",
-    "reinstall": "rm -r -f ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log && yarn install",
+    "reinstall": "rimraf ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log && yarn install",
     "up": "yarn ncu",
     "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall"
   },
+  "engines": {
+    "node": "16"
+  },
   "sideEffects": false,
-  "version": "1.0.24"
+  "version": "1.0.32"
 }
