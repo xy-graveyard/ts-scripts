@@ -89,6 +89,9 @@
     "up": "yarn ncu",
     "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall"
   },
+  "engines": {
+    "node": "16"
+  },
   "sideEffects": false,
   "version": "1.0.31"
 }
