@@ -7,5 +7,6 @@ safeExit(() => {
   execSync('yarn install', { stdio: 'inherit' })
   execSync('yarn upgrade', { stdio: 'inherit' })
   execSync('yarn ncu -u', { stdio: 'inherit' })
+  execSync('yarn install', { stdio: 'inherit' })
   execSync('yarn reinstall', { stdio: 'inherit' })
 })
