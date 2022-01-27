@@ -6,5 +6,5 @@ safeExit(() => {
   console.log(`Reinstall [${process.cwd()}]`)
   execSync('yarn rimraf ./yarn.lock', { stdio: 'inherit' })
   execSync('yarn rimraf ./node_modules', { stdio: 'inherit' })
-  execSync('yarn install', { stdio: 'inherit' })
+  execSync('yarn install --network-timeout 10000', { stdio: 'inherit' })
 })
