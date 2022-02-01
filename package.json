@@ -17,6 +17,7 @@
     "rebuild": "bin/rebuild.js",
     "reinstall": "bin/reinstall.js",
     "sonar": "bin/sonar.js",
+    "test": "bin/test.js",
     "up": "bin/up.js",
     "updo": "bin/updo.js",
     "xylabs-build": "bin/build.js",
@@ -30,6 +31,7 @@
     "xylabs-rebuild": "bin/rebuild.js",
     "xylabs-reinstall": "bin/reinstall.js",
     "xylabs-sonar": "bin/sonar.js",
+    "xylabs-test": "bin/test.js",
     "xylabs-up": "bin/up.js",
     "xylabs-updo": "bin/updo.js"
   },
@@ -38,7 +40,7 @@
     "url": "https://github.com/xylabs/ts-scripts/issues"
   },
   "dependencies": {
-    "@xylabs/eslint-config": "^2.2.13",
+    "@xylabs/eslint-config": "^2.2.14",
     "depcheck": "^1.4.3",
     "eslint-plugin-sonarjs": "^0.11.0",
     "node-cmd": "^5.0.0",
