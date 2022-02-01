@@ -92,7 +92,7 @@
     "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall"
   },
   "engines": {
-    "node": "16"
+    "node": ">=14.16 <17"
   },
   "sideEffects": false,
   "version": "1.0.36"
