@@ -96,5 +96,5 @@
     "node": ">=14.16 <17"
   },
   "sideEffects": false,
-  "version": "1.0.38"
+  "version": "1.0.39"
 }
