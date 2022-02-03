@@ -567,10 +567,10 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.29.tgz#07dac7051117236431d2f737d16932aa38bbb925"
   integrity sha512-BjNpU8OK6Z0LVzGUppEk0CMYm/hKDnZfYdjSmPOs0N+TR1cLKJAkDwW8ASZUvaaSLEi6d3hVM7jnWnX+6yWnHw==
 
-"@xylabs/eslint-config@^2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@xylabs/eslint-config/-/eslint-config-2.3.3.tgz#1d997cae1dc2891625b5f37d227337c8ccd48524"
-  integrity sha512-xtvIQgCYBCdfI1t00kLQaHKJqaqczSJY2aqTWNtXy0TclmNff3Mb57pIKfJ+A0l+Z89nUkq6XqsZzGy7x2sT+A==
+"@xylabs/eslint-config@^2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@xylabs/eslint-config/-/eslint-config-2.3.4.tgz#e27a6e43c2cd9b83a175910d9de3e55289f6da68"
+  integrity sha512-aUiGycfY/8xpN6c6lnLLeaJ+iPHBJQaTT34QjauGQt2OUFG6pVBvHLI+cvEfRlb7hzU1jXtQb/1n0R+uo85qfw==
   dependencies:
     "@babel/core" "^7"
     "@babel/eslint-parser" "^7"
