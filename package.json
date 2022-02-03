@@ -83,7 +83,7 @@
     "compile": "tsc -p ./tsconfig.build.json",
     "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 20 }]' ./src",
     "dead": "yarn ts-prune",
-    "deploy": "yarn build && yarn version --patch && yarn publish",
+    "deploy": "yarn cycle && yarn build && yarn version --patch && yarn publish",
     "deps": "yarn depcheck",
     "fix": "eslint . --fix",
     "lint": "eslint .",
