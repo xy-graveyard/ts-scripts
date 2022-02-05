@@ -82,7 +82,7 @@
     "compile": "tsc -p ./tsconfig.build.json",
     "cycle": "eslint --rule 'import/no-cycle: [1, { maxDepth: 20 }]' ./src",
     "dead": "yarn ts-prune",
-    "deploy": "yarn cycle && yarn build && yarn version --patch && yarn publish",
+    "deploy": "yarn cycle && yarn build && yarn version patch && yarn npm publish",
     "deps": "yarn depcheck",
     "fix": "eslint . --fix",
     "lint": "eslint .",
@@ -95,6 +95,6 @@
     "node": ">=14.16 <17"
   },
   "sideEffects": false,
-  "version": "1.0.40",
+  "version": "1.0.41",
   "packageManager": "yarn@3.1.1"
 }
