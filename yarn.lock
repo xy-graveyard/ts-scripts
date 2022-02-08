@@ -565,10 +565,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^17":
-  version: 17.0.15
-  resolution: "@types/node@npm:17.0.15"
-  checksum: aa64ecf4fbcf9888e794dcdc20e98c49cdcb102b17e57c44ca56943904732d6cc250e766f8448a3cd71d6a40a4b597bd83c565e5bd9b982733fa3f9813d5c291
+"@types/node@npm:*, @types/node@npm:^17.0.16":
+  version: 17.0.16
+  resolution: "@types/node@npm:17.0.16"
+  checksum: 2d452a9e0ee7ec83d447d66dd2baf4dd05ef2fbcda39b06f73d86b36d5150d86c43a733d534d77467e7782104756944d42a35ed4b64113bda341b8334ee4d01d
   languageName: node
   linkType: hard
 
@@ -820,20 +820,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@xylabs/ts-scripts@workspace:."
   dependencies:
-    "@types/node": ^17
+    "@types/node": ^17.0.16
     "@xylabs/eslint-config": ^2.3.13
-    copyfiles: ^2
+    copyfiles: ^2.4.1
     depcheck: ^1.4.3
-    eslint: ^8
+    eslint: ^8.8.0
     eslint-plugin-sonarjs: ^0.11.0
     node-cmd: ^5.0.0
-    npm-check-updates: ^12
+    npm-check-updates: ^12.3.0
     npm-package-json-lint: ^5.4.2
     npm-package-json-lint-config-default: ^3.0.0
-    prettier: ^2
+    prettier: ^2.5.1
     rimraf: ^3.0.2
-    ts-prune: ^0.10
-    typescript: ^4
+    ts-prune: ^0.10.3
+    typescript: ^4.5.5
   peerDependencies:
     typescript: ^4
   bin:
@@ -1579,7 +1579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"copyfiles@npm:^2":
+"copyfiles@npm:^2.4.1":
   version: 2.4.1
   resolution: "copyfiles@npm:2.4.1"
   dependencies:
@@ -2242,7 +2242,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8":
+"eslint@npm:^8, eslint@npm:^8.8.0":
   version: 8.8.0
   resolution: "eslint@npm:8.8.0"
   dependencies:
@@ -4564,9 +4564,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-check-updates@npm:^12":
-  version: 12.2.1
-  resolution: "npm-check-updates@npm:12.2.1"
+"npm-check-updates@npm:^12.3.0":
+  version: 12.3.0
+  resolution: "npm-check-updates@npm:12.3.0"
   dependencies:
     chalk: ^4.1.2
     cint: ^8.2.1
@@ -4596,10 +4596,11 @@ __metadata:
     source-map-support: ^0.5.21
     spawn-please: ^1.0.0
     update-notifier: ^5.1.0
+    yaml: ^1.10.2
   bin:
     ncu: build/src/bin/cli.js
     npm-check-updates: build/src/bin/cli.js
-  checksum: f43382020e4ecbe5f357945bd42d9f4aad047ef05720bafd88530799044c48af06a0d3773ac789ec00f8a1bbefa6c4f8718e891bc936945b3fe3ff6b80ef4c05
+  checksum: 67d2df944c5d7cb8da97053d1713256c704580ea9902a9168a4158c6634c6e00780046947f90758f38d86d28b36a1440427614da6711d0b4f6456a80b7b4bdab
   languageName: node
   linkType: hard
 
@@ -5129,7 +5130,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2":
+"prettier@npm:^2, prettier@npm:^2.5.1":
   version: 2.5.1
   resolution: "prettier@npm:2.5.1"
   bin:
@@ -7462,7 +7463,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-prune@npm:^0.10":
+"ts-prune@npm:^0.10.3":
   version: 0.10.3
   resolution: "ts-prune@npm:0.10.3"
   dependencies:
@@ -7577,7 +7578,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4":
+"typescript@npm:^4.5.5":
   version: 4.5.5
   resolution: "typescript@npm:4.5.5"
   bin:
@@ -7587,7 +7588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.5.5#~builtin<compat/typescript>":
   version: 4.5.5
   resolution: "typescript@patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"
   bin:
@@ -8141,7 +8142,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:^1.10.0":
+"yaml@npm:^1.10.0, yaml@npm:^1.10.2":
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
