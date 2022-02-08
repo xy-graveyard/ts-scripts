@@ -5,6 +5,7 @@
     "@xylabs/eslint-config"
   ],
   "rules": {
+    "import/no-default-export": ["off"],
     "import/no-cycle": [1, { "maxDepth": 10 }]
   }
 }
