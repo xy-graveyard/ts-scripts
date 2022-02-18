@@ -38,8 +38,8 @@
     "xylabs-sonar": "bin/sonar.js",
     "xylabs-test": "bin/test.js",
     "xylabs-up": "bin/up.js",
-    "xylabs-updo": "bin/updo.js",
     "xylabs-up3": "bin/up3.js",
+    "xylabs-updo": "bin/updo.js",
     "xylabs-updo3": "bin/updo3.js"
   },
   "bugs": {
@@ -101,6 +101,6 @@
     "node": ">=14.16 <17"
   },
   "sideEffects": false,
-  "version": "1.0.43",
+  "version": "1.0.44",
   "packageManager": "yarn@3.1.1"
 }

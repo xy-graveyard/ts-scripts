@@ -908,15 +908,19 @@ __metadata:
     cycle: bin/cycle.js
     dead: bin/dead.js
     deploy: bin/deploy.js
+    deploy3: bin/deploy3.js
     deps: bin/deps.js
     fix: bin/fix.js
     lint: bin/lint.js
+    migrate: bin/migrate.js
     rebuild: bin/rebuild.js
     reinstall: bin/reinstall.js
     sonar: bin/sonar.js
     test: bin/test.js
     up: bin/up.js
+    up3: bin/up3.js
     updo: bin/updo.js
+    updo3: bin/updo3.js
     xylabs-build: bin/build.js
     xylabs-clean: bin/clean.js
     xylabs-compile: bin/compile.js
@@ -925,12 +929,15 @@ __metadata:
     xylabs-deps: bin/deps.js
     xylabs-fix: bin/fix.js
     xylabs-lint: bin/lint.js
+    xylabs-migrate: bin/migrate.js
     xylabs-rebuild: bin/rebuild.js
     xylabs-reinstall: bin/reinstall.js
     xylabs-sonar: bin/sonar.js
     xylabs-test: bin/test.js
     xylabs-up: bin/up.js
+    xylabs-up3: bin/up3.js
     xylabs-updo: bin/updo.js
+    xylabs-updo3: bin/updo3.js
   languageName: unknown
   linkType: soft
 
