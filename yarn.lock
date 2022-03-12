@@ -266,20 +266,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@eslint/eslintrc@npm:1.2.0"
+"@eslint/eslintrc@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@eslint/eslintrc@npm:1.2.1"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.3.2
     espree: ^9.3.1
     globals: ^13.9.0
-    ignore: ^4.0.6
+    ignore: ^5.2.0
     import-fresh: ^3.2.1
     js-yaml: ^4.1.0
     minimatch: ^3.0.4
     strip-json-comments: ^3.1.1
-  checksum: a5e51dcf02627363567094456d7880b46b6a14a285d7a057f083ca903bdd862483bb6314cbc9fb6fa2d2c4537d50e0d28bd5e39650840241ae4796faaec65d2e
+  checksum: 1f797b9f94d71b965992cf6c44e3bcb574643014fd1e3d4862d25056bd5568f59c488461a7e9a1c1758ca7f0def5d3cb69c3d8b38581bcf4a53af74371243797
   languageName: node
   linkType: hard
 
@@ -868,9 +868,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xylabs/eslint-config@npm:^2.3.18":
-  version: 2.3.18
-  resolution: "@xylabs/eslint-config@npm:2.3.18"
+"@xylabs/eslint-config@npm:^2.3.19":
+  version: 2.3.19
+  resolution: "@xylabs/eslint-config@npm:2.3.19"
   dependencies:
     "@babel/core": ^7.17.5
     "@babel/eslint-parser": ^7.17.0
@@ -893,7 +893,7 @@ __metadata:
     remark-lint-maximum-line-length: ^3.1.2
     remark-preset-lint-markdown-style-guide: ^5.1.2
     typescript: ^4.6.2
-  checksum: 2d0a033f30ebc4cfd0d9df3abc7e00c543178f2bf097f6a4084962adda05a6b5bd5b733da1e2c21461d6b9ad3710cdb39fe112b710a55b30c69831332cb88244
+  checksum: 636909f0d83a10ef562ea49b4b0e1b2f7b717b2152936dbf82209ddeb6660924cb90fde037d6346e5c744cfc32199367f80db903718a727561e3588431a1de1a
   languageName: node
   linkType: hard
 
@@ -902,13 +902,13 @@ __metadata:
   resolution: "@xylabs/ts-scripts@workspace:."
   dependencies:
     "@types/node": ^17.0.21
-    "@xylabs/eslint-config": ^2.3.18
+    "@xylabs/eslint-config": ^2.3.19
     copyfiles: ^2.4.1
     depcheck: ^1.4.3
-    eslint: ^8.10.0
+    eslint: ^8.11.0
     eslint-plugin-sonarjs: ^0.12.0
     node-cmd: ^5.0.0
-    npm-check-updates: ^12.5.2
+    npm-check-updates: ^12.5.3
     npm-package-json-lint: ^6.0.1
     npm-package-json-lint-config-default: ^5.0.0
     prettier: ^2.5.1
@@ -2353,11 +2353,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.10.0":
-  version: 8.10.0
-  resolution: "eslint@npm:8.10.0"
+"eslint@npm:^8.10.0, eslint@npm:^8.11.0":
+  version: 8.11.0
+  resolution: "eslint@npm:8.11.0"
   dependencies:
-    "@eslint/eslintrc": ^1.2.0
+    "@eslint/eslintrc": ^1.2.1
     "@humanwhocodes/config-array": ^0.9.2
     ajv: ^6.10.0
     chalk: ^4.0.0
@@ -2394,7 +2394,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 8b31ab3de5b48b6828bf13c09c9e62ee0045fa0afa017efaa73eedcf4dc33bc204ee4c467d4677e37967d1645f73816ddef4271422e691fded352040f8f83093
+  checksum: a06a2ea37002d6c0a4f462fe31b4411185dc3da7857fafb896eb392ba95a1289cc3538056474b2f44f08012f265bede01a39d46df4ac39ebc6d7be90e2c8f9fa
   languageName: node
   linkType: hard
 
@@ -4739,9 +4739,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-check-updates@npm:^12.5.2":
-  version: 12.5.2
-  resolution: "npm-check-updates@npm:12.5.2"
+"npm-check-updates@npm:^12.5.3":
+  version: 12.5.3
+  resolution: "npm-check-updates@npm:12.5.3"
   dependencies:
     chalk: ^4.1.2
     cint: ^8.2.1
@@ -4775,7 +4775,7 @@ __metadata:
   bin:
     ncu: build/src/bin/cli.js
     npm-check-updates: build/src/bin/cli.js
-  checksum: 77dea2ed79b806bc7ba988a5cffed21b1b8d76e8ce1f86c37d439a4fa72708ce763cf54d52a15b6d4781c51965485424e2ee84ee50b77f573ccfadc7e823482d
+  checksum: db7909c2ec35e2210e3e0d05c6c5ef008aa3a44168b1131cc2692a133985090b35fa5e2468228f38b088ecf285859034671091c3e8d201af0bb2b5831bdbfe27
   languageName: node
   linkType: hard
 

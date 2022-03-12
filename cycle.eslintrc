@@ -1,11 +1,13 @@
 {
   "root": true,
   "ignorePatterns": ["node_modules/", "build/", "dist/"],
-  "extends": [
-    "@xylabs/eslint-config"
-  ],
+  "plugins": ["import"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
+    }
+  },
   "rules": {
-    "import/no-default-export": ["off"],
     "import/no-cycle": [1, { "maxDepth": 10 }]
   }
 }
