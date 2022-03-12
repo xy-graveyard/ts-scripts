@@ -4,10 +4,11 @@
   "plugins": ["import"],
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"],
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     }
   },
   "rules": {
-    "import/no-cycle": [1, { "maxDepth": 10 }]
+    "import/no-cycle": [1, { "maxDepth": 10 }],
+    "import/no-internal-modules": ["off"]
   }
 }
