@@ -936,6 +936,8 @@ __metadata:
     deploy3: bin/deploy3.js
     deps: bin/deps.js
     fix: bin/fix.js
+    gitlint: bin/gitlint.js
+    gitlint-fix: bin/gitlint-fix.js
     lint: bin/lint.js
     migrate: bin/migrate.js
     rebuild: bin/rebuild.js
@@ -953,6 +955,8 @@ __metadata:
     xylabs-dead: bin/dead.js
     xylabs-deps: bin/deps.js
     xylabs-fix: bin/fix.js
+    xylabs-gitlint: bin/gitlint.js
+    xylabs-gitlint-fix: bin/gitlint-fix.js
     xylabs-lint: bin/lint.js
     xylabs-migrate: bin/migrate.js
     xylabs-rebuild: bin/rebuild.js
