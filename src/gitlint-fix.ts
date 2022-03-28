@@ -22,7 +22,7 @@ safeExit(() => {
 
   if (gitConfig.core.eol !== 'lf') {
     execSync('git config core.eol lf', { stdio: 'inherit' })
-    console.warn(chalk.yellow('\nGitlint Fix: Updated core.autocrlf to be false\n'))
+    console.warn(chalk.yellow('\nGitlint Fix: Updated core.eol to be "lf"\n'))
   }
 
   return 1
