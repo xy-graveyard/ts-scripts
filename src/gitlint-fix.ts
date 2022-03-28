@@ -12,9 +12,17 @@ safeExit(() => {
 
   if (gitConfig.core.ignorecase) {
     execSync('git config core.ignorecase false', { stdio: 'inherit' })
-    console.warn(chalk.yellow('\nGitlint Fix: Updated ignorecase to be false\n'))
-  } else {
-    console.warn(chalk.green('\nGitlint Fix: No update needed\n'))
+    console.warn(chalk.yellow('\nGitlint Fix: Updated core.ignorecase to be false\n'))
+  }
+
+  if (gitConfig.core.autocrlf !== false) {
+    execSync('git config core.autocrlf false', { stdio: 'inherit' })
+    console.warn(chalk.yellow('\nGitlint Fix: Updated core.autocrlf to be false\n'))
+  }
+
+  if (gitConfig.core.eol !== 'lf') {
+    execSync('git config core.eol lf', { stdio: 'inherit' })
+    console.warn(chalk.yellow('\nGitlint Fix: Updated core.autocrlf to be false\n'))
   }
 
   return 1
