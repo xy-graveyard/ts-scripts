@@ -6,8 +6,8 @@
     "outDir": "./bin",
     "rootDir": ".",
     "sourceMap": false,
-    "target": "es5"
+    "target": "ES5"
   },
   "exclude": ["src/**/*.spec.ts"],
-  "extends": "./tsconfig.es.json"
+  "extends": "./tsconfig.base.json"
 }
