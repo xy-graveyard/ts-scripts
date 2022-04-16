@@ -4,6 +4,17 @@
   "extends": [
     "@xylabs"
   ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "."
+      }
+    }
+  },
   "rules": {
     "import/no-internal-modules": [
       "warn", {
