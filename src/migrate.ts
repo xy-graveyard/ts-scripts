@@ -5,15 +5,7 @@ import { safeExit } from './safeExit'
 
 const npmIgnore = ['.pnp.*', '.yarn/*']
 
-const gitIgnore = [
-  '.pnp.*',
-  '.yarn/*',
-  '!.yarn/patches',
-  '!.yarn/plugins',
-  '!.yarn/releases',
-  '!.yarn/sdks',
-  '!.yarn/versions',
-]
+const gitIgnore = ['.pnp.*', '.yarn/*', '!.yarn/patches', '!.yarn/plugins', '!.yarn/releases', '!.yarn/sdks', '!.yarn/versions']
 
 safeExit(() => {
   console.log(`Migrate [${process.cwd()}]`)
