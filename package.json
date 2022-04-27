@@ -31,6 +31,8 @@
     "xylabs-compile": "bin/compile.js",
     "xylabs-cycle": "bin/cycle.js",
     "xylabs-dead": "bin/dead.js",
+    "xylabs-deploy": "bin/deploy.js",
+    "xylabs-deploy3": "bin/deploy3.js",
     "xylabs-deps": "bin/deps.js",
     "xylabs-fix": "bin/fix.js",
     "xylabs-gitlint": "bin/gitlint.js",
