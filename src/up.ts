@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import { execSync } from 'child_process'
 
+import { resolveBinScript } from './resolveBinScript'
 import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Up [${process.cwd()}]`)
-  execSync('yarn ncu', { stdio: 'inherit' })
+  execSync(`yarn node ${resolveBinScript('ncu')}`, { stdio: 'inherit' })
 })
