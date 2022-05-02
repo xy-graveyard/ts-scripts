@@ -941,6 +941,7 @@ __metadata:
     parse-git-config: ^3.0.0
     prettier: ^2.6.2
     rimraf: ^3.0.2
+    rollup: ^2.71.1
     ts-prune: ^0.10.3
     typescript: ^4.6.4
   peerDependencies:
@@ -7129,6 +7130,20 @@ __metadata:
   bin:
     rimraf: bin.js
   checksum: 87f4164e396f0171b0a3386cc1877a817f572148ee13a7e113b238e48e8a9f2f31d009a92ec38a591ff1567d9662c6b67fd8818a2dbbaed74bc26a87a2a4a9a0
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^2.71.1":
+  version: 2.71.1
+  resolution: "rollup@npm:2.71.1"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: fe2b2fda7bf53c86e970f3b026b784c00e2237089b802755b3e43725db88f5d1869c1f81f8c5257e9b68b0fd1840dcbd3897d2f19768cce97a37c70e1a563dce
   languageName: node
   linkType: hard
 
