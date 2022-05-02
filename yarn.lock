@@ -591,10 +591,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^17.0.29":
-  version: 17.0.29
-  resolution: "@types/node@npm:17.0.29"
-  checksum: bb9d7bce9d6d3882efd9d63b773b548dce98df4bd57eff8ceaa316aa2f3346e36d3618764cc93da84bbff92005174a35eec3465cde91ee973ef1c351ffa40074
+"@types/node@npm:*, @types/node@npm:^17.0.31":
+  version: 17.0.31
+  resolution: "@types/node@npm:17.0.31"
+  checksum: 704618350f8420d5c47db0f7778398e821b7724369946f5c441a7e6b9343295553936400eb8309f0b07d5e39c240988ab3456b983712ca86265dabc9aee4ad3d
   languageName: node
   linkType: hard
 
@@ -927,7 +927,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@xylabs/ts-scripts@workspace:."
   dependencies:
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.31
     "@types/parse-git-config": ^3.0.1
     "@xylabs/eslint-config": ^2.3.22
     copyfiles: ^2.4.1
@@ -935,14 +935,14 @@ __metadata:
     eslint: ^8.14.0
     eslint-plugin-sonarjs: ^0.13.0
     node-cmd: ^5.0.0
-    npm-check-updates: ^12.5.9
+    npm-check-updates: ^12.5.11
     npm-package-json-lint: ^6.3.0
     npm-package-json-lint-config-default: ^5.0.0
     parse-git-config: ^3.0.0
     prettier: ^2.6.2
     rimraf: ^3.0.2
     ts-prune: ^0.10.3
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   peerDependencies:
     typescript: ^4
   bin:
@@ -4834,9 +4834,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-check-updates@npm:^12.5.9":
-  version: 12.5.9
-  resolution: "npm-check-updates@npm:12.5.9"
+"npm-check-updates@npm:^12.5.11":
+  version: 12.5.11
+  resolution: "npm-check-updates@npm:12.5.11"
   dependencies:
     chalk: ^4.1.2
     cint: ^8.2.1
@@ -4870,7 +4870,7 @@ __metadata:
   bin:
     ncu: build/src/bin/cli.js
     npm-check-updates: build/src/bin/cli.js
-  checksum: 82b8a73c35ca5fee728c336af207d28acbb93705717fece82af80fc8f231e1dfb4bc406ae4a3489e9a631d0a026abb682df4b1c49ca9c89b4712339984d74868
+  checksum: 6fb30bf8ea3692e424db948f40f9cbda8873353e459d440fca8903e4c125a12dbbe52c3ce45706cb341a20e5fa943758f067b3198099cc1ca291cdc112b2ad64
   languageName: node
   linkType: hard
 
@@ -7898,23 +7898,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.3":
-  version: 4.6.3
-  resolution: "typescript@npm:4.6.3"
+"typescript@npm:^4.6.3, typescript@npm:^4.6.4":
+  version: 4.6.4
+  resolution: "typescript@npm:4.6.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 255bb26c8cb846ca689dd1c3a56587af4f69055907aa2c154796ea28ee0dea871535b1c78f85a6212c77f2657843a269c3a742d09d81495b97b914bf7920415b
+  checksum: e7bfcc39cd4571a63a54e5ea21f16b8445268b9900bf55aee0e02ad981be576acc140eba24f1af5e3c1457767c96cea6d12861768fb386cf3ffb34013718631a
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>":
-  version: 4.6.3
-  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=493e53"
+"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>":
+  version: 4.6.4
+  resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: fe6bdc1afb2f145ddb7b0a3a31f96352209f6a5704d97f038414ea22ff9d8dd42f32cfb6652e30458d7d958d2d4e85de2df11c574899c6f750a6b3c0e90a3a76
+  checksum: 8cff08bf66d9ecfbf9fcc5edde04a5a7923e6cac3b21d99b4e9a06973bf5bd7f9a83ec7eed24129c1b9e13fd861de8c1070110d4b9ce9f18ab57c6999e9c9a6f
   languageName: node
   linkType: hard
 
