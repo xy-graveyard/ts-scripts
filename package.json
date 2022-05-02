@@ -62,6 +62,7 @@
     "eslint": "^8.14.0",
     "eslint-plugin-sonarjs": "^0.13.0",
     "jest": "^28.0.3",
+    "jest-sorted": "^1.0.14",
     "node-cmd": "^5.0.0",
     "npm-check-updates": "^12.5.11",
     "npm-package-json-lint": "^6.3.0",
