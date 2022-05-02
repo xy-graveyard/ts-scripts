@@ -1745,6 +1745,7 @@ __metadata:
     eslint: ^8.14.0
     eslint-plugin-sonarjs: ^0.13.0
     jest: ^28.0.3
+    jest-sorted: ^1.0.14
     node-cmd: ^5.0.0
     npm-check-updates: ^12.5.11
     npm-package-json-lint: ^6.3.0
@@ -5283,6 +5284,13 @@ __metadata:
     pretty-format: ^28.0.2
     semver: ^7.3.5
   checksum: e4f576dc237958ff9f2f74c2568a1657898e8843dc382d19743a784b7761e78538a598ecd9ef338f44effcfb44a96b10383ed0755ad6f95285fc9ae749f68951
+  languageName: node
+  linkType: hard
+
+"jest-sorted@npm:^1.0.14":
+  version: 1.0.14
+  resolution: "jest-sorted@npm:1.0.14"
+  checksum: 288d9161378436317060a47c0ea7f65126bd7dd5deebe0a110c363269ce64ffbf25ce6b5432b4d821c1aab9b021f98ebc5f3d4a55168876f1a012d47867e7ca0
   languageName: node
   linkType: hard
 

@@ -6,6 +6,7 @@ ignores: [
   "eslint-plugin-sonarjs",
   "copyfiles",
   "jest",
+  "jest-sorted",
   "@types/jest",
   "ts-jest",
   "rollup",
