@@ -5,6 +5,9 @@ ignores: [
   "npm-check-updates",
   "eslint-plugin-sonarjs",
   "copyfiles",
+  "jest",
+  "@types/jest",
+  "ts-jest",
   "rollup",
   "node-cmd",
   "tslib"
