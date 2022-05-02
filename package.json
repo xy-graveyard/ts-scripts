@@ -54,6 +54,8 @@
   },
   "dependencies": {
     "@xylabs/eslint-config": "^2.3.22",
+    "@xylabs/rollup-config": "1.1.17",
+    "chalk": "^5.0.1",
     "copyfiles": "^2.4.1",
     "depcheck": "^1.4.3",
     "eslint": "^8.14.0",
@@ -71,9 +73,7 @@
   "description": "TypeScript project scripts",
   "devDependencies": {
     "@types/node": "^17.0.31",
-    "@types/parse-git-config": "^3.0.1",
-    "eslint": "^8.14.0",
-    "prettier": "^2.6.2"
+    "@types/parse-git-config": "^3.0.1"
   },
   "homepage": "https://xylabs.com",
   "keywords": [
