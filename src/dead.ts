@@ -4,5 +4,5 @@ import { execSync } from 'child_process'
 import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Dead [${process.cwd()}]`)
-  execSync('yarn dlx ts-prune', { stdio: 'inherit' })
+  execSync('yarn dlx -q ts-prune', { stdio: 'inherit' })
 })

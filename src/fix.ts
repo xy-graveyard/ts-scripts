@@ -4,5 +4,5 @@ import { execSync } from 'child_process'
 import { safeExit } from './safeExit'
 safeExit(() => {
   console.log(`Fix [${process.cwd()}]`)
-  execSync('yarn dlx eslint . --fix', { stdio: 'inherit' })
+  execSync('yarn dlx -q eslint . --fix', { stdio: 'inherit' })
 })
